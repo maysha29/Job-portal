@@ -1,10 +1,10 @@
-import React, { use } from 'react';
+import React, { useContext } from 'react';
 import { AuthContext } from '../Contexts/AuthContext';
 import signInLottie from '../assets/lotties/signIn.json';
 import Lottie from 'lottie-react';
 const SignIn = () => {
      
-     const {createUser}=use(AuthContext)
+     const {signInUser}=useContext(AuthContext)
     
     
          const handleSignIn=e=>{
@@ -14,7 +14,7 @@ const SignIn = () => {
             const password=form.password.value;
             console.log({email,password});
     
-            createUser(email,password)
+            signInUser(email,password)
             .then(result=>{
               console.log(result.user);
             })
