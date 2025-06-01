@@ -1,8 +1,10 @@
 import React from 'react';
 import htmlPic from '../assets/pics/html.jpg';
+import { Link } from 'react-router';
 
 const JobCard = ({job}) => {
-    const {title,location,jobType,category,salaryRange,description,company,requirements}=job;
+    const {title,location,jobType,category,salaryRange,description,company,requirements,_id}=job;
+    // const navigate=useNavigate();
     return (
   <div>
    <div className="card bg-base-100 w-96 shadow-sm">
@@ -30,7 +32,7 @@ const JobCard = ({job}) => {
 </div>
 
     <div className="card-actions justify-end">
-      <button className="btn btn-primary w-full">Apply Now</button>
+      <Link to={`/jobs/${_id}`} className="btn btn-primary w-full">Show Details</Link>
     </div>
   </div>
 </div>

@@ -1,5 +1,4 @@
 import React, { Suspense } from 'react';
-import Footer from '../Shared/Footer';
 import Banner from './Banner';
 import HotJobs from './HotJobs';
 

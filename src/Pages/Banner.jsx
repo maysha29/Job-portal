@@ -7,7 +7,7 @@ import team2 from '../assets/pics/team2.jpg';
 const Banner = () => {
     return (
         <div>
-      <div className="hero bg-base-200 min-h-screen py-16">
+      <div className="hero bg-base-200 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
   <div className="hero-content flex-col lg:flex-row-reverse gap-10">
     
     {/* Animated Images Container */}
